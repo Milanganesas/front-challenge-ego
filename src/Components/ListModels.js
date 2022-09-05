@@ -12,8 +12,10 @@ const ListModels = () => {
                         <div key={m.id} className="grid text-center h-[300px] sm:mx-2 mb-[45px] sm:mb-0 hover:text-[#EB0A1E]">
                             <Link to={`/${m.id}`}>
                             <div id={`car${m.id}`} className="peer grid justify-center">
-                                <h3 className="font-semibold text-[28px]">{m.name}</h3>
-                                <p className="text-black text-[14px]">{m.year} | ${m.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")}</p>
+                                <div className="h-[84px]">
+                                    <h3 className="font-semibold text-[28px]">{m.name}</h3>
+                                    <p className="text-black text-[14px]">{m.year} | ${m.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")}</p>
+                                </div>
                                 <div className="flex items-center h-[225px]">
                                     <img src={m.thumbnail} alt={m.name} />
                                 </div>
