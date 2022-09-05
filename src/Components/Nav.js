@@ -32,7 +32,7 @@ const Nav = () => {
                     <p className='text-[14px]'>Menú</p>
                     <button onClick={menuStatus}><img src={Drop} alt='drop' width="25px"/></button>
                 </div>
-                <div className={`fixed sm:fixed top-[70px] sm:top-0 right-0 bg-[#FFFFFF] min-w-screen sm:w-[400px] max-h-screen grid justify-items-end text-right text-[20px] overflow-y-scroll overflow-x-hidden ${menu && "translate-x-0"} translate-x-full transition-all duration-500  mr-[0.5px]`}>
+                <div className={`fixed sm:fixed top-[70px] sm:top-0 right-0 bg-[#FFFFFF] min-w-screen sm:w-[400px] max-h-screen grid justify-items-end text-right text-[20px] overflow-y-scroll overflow-x-hidden ${menu ? "translate-x-0" : "translate-x-full"} transition-all duration-500  mr-[0.5px]`}>
                     <div className='mr-7 mt-5'>
                         <button onClick={menuStatus} className='flex items-center gap-3 text-[14px]'>Close <img src={Close} alt='close' width="15px"/></button>
                     </div>
